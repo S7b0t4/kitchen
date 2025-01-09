@@ -20,6 +20,34 @@
   font-size: 10px;
 }
 
+.main{}
+
+.advantages{}
+
+.advantages2{}
+
+.types{}
+
+.categories{}
+
+.styles{}
+
+.bonus{}
+
+.free_3d{}
+
+.partners{}
+
+.installment{}
+
+.quiz{}
+
+.banner {}
+
+.feedbaack {}
+
+.footer {}
+
 @media (max-width: 500px) {
   .header_title_logo {
     width: 96px;
