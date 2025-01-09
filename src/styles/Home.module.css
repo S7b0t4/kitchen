@@ -14,9 +14,10 @@
 }
 
 .header_subtitle {
+  font-family: var(--regular-font);
   transform-origin: center center;
   line-height: 12px;
-  color: #6b6b6b;
+  color: var(--second-text-color);
   font-size: 10px;
 }
 
