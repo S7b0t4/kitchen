@@ -2,6 +2,11 @@
   padding: 34px 60px;
   padding-bottom: 29px;
 }
+.header_text_block{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 .header_title_logo {
   width: 125px;
   height: 29px;

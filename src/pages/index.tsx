@@ -43,7 +43,7 @@ export default function Home() {
         className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
       >
         <header className={styles.header}>
-          <div className="header_text_block">
+          <div className={styles.header_text_block}>
             <div className="header_title">
               <Image
                 className={styles.header_title_logo}
@@ -53,12 +53,16 @@ export default function Home() {
                 height={29}
               />
             </div>
-            <p className={styles.header_subtitle}>
-              Кухня, которая создает уют и упрощает вашу жизнь. Никаких
-              компромиссов, никаких переплат
-            </p>
+            <div className={styles.header_subtitle}>
+              Кухня, которая создает уют и упрощает вашу жизнь.<br/>
+              Никаких компромиссов, никаких переплат
+            </div>
+            <div className={styles.header_menu}>
+              Меню <i className="fa-solid fa-bars"></i>
+            </div>
           </div>
         </header>
+
         <main className={styles.main}></main>
         <footer className={styles.footer}></footer>
       </div>
