@@ -1,15 +1,17 @@
 :root {
   --background: #ffffff;
-  --text-color: black;
+  --text-color: #1E1E1E;
   --second-text-color: #6b6b6b;
   --primary-color: #EC6941;
   --secondary-color: #FFE8D6;
+  --third-color: #FFFFFF;
 
   --regular-font: 'object_sans', Arial, sans-serif;
 }
 
 html,
 body {
+  font-family: var(--regular-font);
   max-width: 100vw;
   overflow-x: hidden;
 }
