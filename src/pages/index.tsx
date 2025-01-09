@@ -4,6 +4,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import ButtonType1 from "@/components/ui/button/ButtonType1";
 import ButtonType2 from "@/components/ui/button/ButtonType2";
+import ButtonType3 from "@/components/ui/button/ButtonType3";
+import ButtonType4 from "@/components/ui/button/ButtonType4";
+import ButtonType5 from "@/components/ui/button/ButtonType5";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -65,7 +68,10 @@ export default function Home() {
           </div>
         </header>
             {/* <ButtonType1 label={"Получить консультацию"} onClick={()=>{console.log("click")}}/> */}
-            <ButtonType2 label={""} onClick={()=>{console.log("click")}}/>
+            <ButtonType2 label={"/tg.svg"} onClick={()=>{console.log("click")}}/>
+            <ButtonType3 label={"Оставить заявку"} onClick={()=>{console.log("click")}}/>
+            <ButtonType4 label={"/weui_arrow-filled.svg"} onClick={()=>{console.log("click")}}/>
+            <ButtonType5 text={"Подробнее"} img_link={"/weui_arrow-filled.svg"} onClick={()=>{console.log("click")}}/>
 
         {/* ===  Первый экран  ===  */}
         <main className={styles.main}></main>

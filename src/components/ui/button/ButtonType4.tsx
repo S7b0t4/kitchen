@@ -1,7 +1,7 @@
-import styles from "./ButtonType2.module.css";
 import Image from "next/image";
+import styles from "./ButtonType4.module.css";
 
-const ButtonType2 = ({
+const ButtonType4 = ({
   label,
   onClick,
 }: {
@@ -15,11 +15,11 @@ const ButtonType2 = ({
         src={label}
         alt="button-icon"
         layout="intrinsic"
-        width={30}
-        height={30}
+        width={7}
+        height={10}
       />
     </button>
   );
 };
 
-export default ButtonType2;
+export default ButtonType4;
