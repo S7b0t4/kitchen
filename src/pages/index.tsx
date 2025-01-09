@@ -64,7 +64,53 @@ export default function Home() {
           </div>
         </header>
             <ButtonType1 label={"Получить консультацию"} onClick={()=>{console.log("click")}}/>
+
+        {/* ===  Первый экран  ===  */}
         <main className={styles.main}></main>
+
+        {/* ===  Преимущества  ===  */}
+        <section className={styles.advantages}></section>
+
+        {/* ===  Преимущества 2  ===  */}
+        <section className={styles.advantages2}></section>
+
+        {/* ===  Типы кухни  ===  */}
+        <section className={styles.types}></section>
+
+        {/* ===  Категории кухонь    ===  */}
+        <section className={styles.categories}></section>
+
+        {/* ===  Стили кухни  ===  */}
+        <section className={styles.styles}></section>
+
+        {/* ===  Бонусная программа    ===  */}
+        <section className={styles.bonus}></section>
+
+        {/* ===  3 простых шага === */}
+        <section className={styles.bonus}></section>
+
+        {/* ===  3D feedbaack === */}
+        <section className={styles.free_3d}></section>
+
+        {/* ===  Партнеры === */}
+        <section className={styles.partners}></section>
+
+        {/* ===  Рассрочка === */}
+        <section className={styles.installment}></section> 
+
+        {/* ===  Рассрочка === */}
+        <section className={styles.installment}></section>
+
+        {/* ===  Квиз-опросник  === */}
+        <section className={styles.quiz}></section>
+
+        {/* ===  Баннер  === */}
+        <section className={styles.banner}></section>
+
+        {/* ===  Обратная связь   === */}
+        <section className={styles.feedbaack}></section>
+        
+        {/* ===  Футер === */}
         <footer className={styles.footer}></footer>
       </div>
     </>
