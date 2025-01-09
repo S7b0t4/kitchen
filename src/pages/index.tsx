@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
+import ButtonType1 from "@/components/ui/button/ButtonType1";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -62,6 +63,7 @@ export default function Home() {
             </div>
           </div>
         </header>
+            <ButtonType1 label={"Получить консультацию"} onClick={()=>{console.log("click")}}/>
 
         {/* ===  Первый экран  ===  */}
         <main className={styles.main}></main>
