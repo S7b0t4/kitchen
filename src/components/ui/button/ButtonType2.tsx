@@ -1,11 +1,18 @@
-import styles from './ButtonType1.module.css';
+import styles from './ButtonType2.module.css';
+import Image from 'next/image';
 
-const ButtonType1 = ({ label, onClick }: { label: string; onClick: () => void }) => {
+const ButtonType2 = ({ label, onClick }: { label: string; onClick: () => void }) => {
   return (
     <button className={styles.button} onClick={onClick}>
-      {label}
+      <Image
+          src={label}
+          alt="button-icon"
+          width={20}
+          height={20}
+          style={{ marginRight: '8px' }}
+        />
     </button>
   );
 };
 
-export default ButtonType1;
+export default ButtonType2;
