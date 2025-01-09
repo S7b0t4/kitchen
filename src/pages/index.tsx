@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import ButtonType1 from "@/components/ui/button/ButtonType1";
+import ButtonType2 from "@/components/ui/button/ButtonType2";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -63,7 +64,8 @@ export default function Home() {
             </div>
           </div>
         </header>
-            <ButtonType1 label={"Получить консультацию"} onClick={()=>{console.log("click")}}/>
+            {/* <ButtonType1 label={"Получить консультацию"} onClick={()=>{console.log("click")}}/> */}
+            <ButtonType2 label={""} onClick={()=>{console.log("click")}}/>
         <main className={styles.main}></main>
         <footer className={styles.footer}></footer>
       </div>
