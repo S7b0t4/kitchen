@@ -15,12 +15,11 @@
   cursor: pointer;
   overflow: hidden;
   color: var(--primary-color); 
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.2s ease, color 0.2s ease, filter 0.2s ease;
 }
 
 .icon {
-  fill: var(--primary-color);
-  transition: fill 0.3s ease;
+  transition: filter 0.2s ease;
 }
 
 .button:hover {
@@ -29,7 +28,7 @@
 }
 
 .button:hover .icon {
-  fill: var(--third-color);
+  filter: brightness(5)
 }
 
 .button img {

@@ -12,17 +12,16 @@ const ButtonType5 = ({
 }) => {
   return (
     <button className={styles.button} onClick={onClick}>
-      <p>
-      {text}
-      </p>
-      <Image
-        className={styles.icon}
-        src={img_link}
-        alt="button-icon"
-        layout="intrinsic"
-        width={7}
-        height={10}
-      />
+      <p>{text}</p>
+      <div className={styles.icon}>
+        <Image
+          src={img_link}
+          alt="button-icon"
+          layout="intrinsic"
+          width={10}
+          height={20}
+        />
+      </div>
     </button>
   );
 };

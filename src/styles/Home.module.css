@@ -1,69 +1,53 @@
-.page {
-  padding: 34px 60px;
-  padding-bottom: 29px;
+.header{
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
 }
-.header_text_block{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.header_title_logo {
-  width: 125px;
-  height: 29px;
-  transition: width 0.3s, height 0.3s;
+.main {
 }
 
-.header_subtitle {
-  font-family: var(--regular-font);
-  transform-origin: center center;
-  line-height: 12px;
-  color: var(--second-text-color);
-  font-size: 10px;
+.advantages {
 }
 
-.main{}
+.advantages2 {
+}
 
-.advantages{}
+.types {
+}
 
-.advantages2{}
+.categories {
+}
 
-.types{}
+.styles {
+}
 
-.categories{}
+.bonus {
+}
 
-.styles{}
+.free_3d {
+}
 
-.bonus{}
+.partners {
+}
 
-.free_3d{}
+.installment {
+}
 
-.partners{}
+.quiz {
+}
 
-.installment{}
+.banner {
+}
 
-.quiz{}
+.feedbaack {
+}
 
-.banner {}
-
-.feedbaack {}
-
-.footer {}
+.footer {
+}
 
 @media (max-width: 500px) {
-  .header_title_logo {
-    width: 96px;
-    height: 23px;
-  }
-  .page {
-    padding: 16px 20px;
-    padding-bottom: 29px;
-  }
-
-  .header {
-    display: flex;
-    justify-content: space-between;
-  }
-
   .main {
     align-items: center;
   }

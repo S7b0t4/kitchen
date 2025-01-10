@@ -14,9 +14,8 @@ const ButtonType2 = ({
         className={styles.icon}
         src={label}
         alt="button-icon"
-        layout="intrinsic"
-        width={30}
-        height={30}
+        width={14}
+        height={12}
       />
     </button>
   );
