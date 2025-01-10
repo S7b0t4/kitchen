@@ -7,6 +7,7 @@ import ButtonType2 from "@/components/ui/button/ButtonType2";
 import ButtonType3 from "@/components/ui/button/ButtonType3";
 import ButtonType4 from "@/components/ui/button/ButtonType4";
 import ButtonType5 from "@/components/ui/button/ButtonType5";
+import Header from "@/widgets/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -48,30 +49,14 @@ export default function Home() {
         className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
       >
         <header className={styles.header}>
-          <div className={styles.header_text_block}>
-            <div className="header_title">
-              <Image
-                className={styles.header_title_logo}
-                src="/logo.svg"
-                alt="Hederlig logo"
-                width={125}
-                height={29}
-              />
-            </div>
-            <div className={styles.header_subtitle}>
-              Кухня, которая создает уют и упрощает вашу жизнь.<br/>
-              Никаких компромиссов, никаких переплат
-            </div>
-            <div className={styles.header_menu}>
-              Меню <i className="fa-solid fa-bars"></i>
-            </div>
-          </div>
+          <Header />
         </header>
-            {/* <ButtonType1 label={"Получить консультацию"} onClick={()=>{console.log("click")}}/> */}
+        {/* <ButtonType1 label={"Получить консультацию"} onClick={()=>{console.log("click")}}/>
             <ButtonType2 label={"/tg.svg"} onClick={()=>{console.log("click")}}/>
             <ButtonType3 label={"Оставить заявку"} onClick={()=>{console.log("click")}}/>
-            <ButtonType4 label={"/weui_arrow-filled.svg"} onClick={()=>{console.log("click")}}/>
-            <ButtonType5 text={"Подробнее"} img_link={"/weui_arrow-filled.svg"} onClick={()=>{console.log("click")}}/>
+            <ButtonType4 link={"/"} text={"Подробнее"} img_link={"/weui_arrow-filled.svg"} onClick={()=>{console.log("click")}}/>
+            <ButtonType4 link={"/"} text={"Пройдите тест и узнайте, <br/> какая кухня подходит именно вам"} img_link={"/weui_arrow-filled.svg"} onClick={()=>{console.log("click")}}/>
+            <ButtonType5 text={"Подробнее"} img_link={"/weui_arrow-filled.svg"} onClick={()=>{console.log("click")}}/> */}
 
         {/* ===  Первый экран  ===  */}
         <main className={styles.main}></main>
@@ -104,7 +89,7 @@ export default function Home() {
         <section className={styles.partners}></section>
 
         {/* ===  Рассрочка === */}
-        <section className={styles.installment}></section> 
+        <section className={styles.installment}></section>
 
         {/* ===  Рассрочка === */}
         <section className={styles.installment}></section>
@@ -117,7 +102,7 @@ export default function Home() {
 
         {/* ===  Обратная связь   === */}
         <section className={styles.feedbaack}></section>
-        
+
         {/* ===  Футер === */}
         <footer className={styles.footer}></footer>
       </div>

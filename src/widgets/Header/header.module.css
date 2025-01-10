@@ -1,0 +1,135 @@
+.page {
+  padding: 34px 60px;
+  padding-bottom: 29px;
+}
+
+.header_row {
+  display: flex;
+  align-items:  flex-center;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_text_block {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.header_title_logo {
+  width: 125px;
+  height: 29px;
+  transition: width 0.3s, height 0.3s;
+}
+
+.header_subtitle {
+  text-size-adjust: auto; 
+  transform-origin: center center;
+  font-family: var(--regular-font);  
+  line-height: 12px;
+  color: var(--second-text-color);
+  font-size: 14px;
+}
+
+.burgerMenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 23px;
+  height: 12px;
+  cursor: pointer;
+}
+
+.line {
+  width: 23px;
+  height: 1.3px;
+  background-color: var(--primary-color);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.header_menu_row{
+  display: flex;
+  gap: 8px;
+}
+
+.header_menu_text{
+  font-weight: 900;
+  font-size: 12px;
+  color: var(--primary-color);
+}
+
+.header_menu{
+  background-color: var(--third-color);
+  border-radius: 6px;
+  border: none;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.header_menu.active {
+  background-color: var(--third-color);
+}
+
+.burgerMenu.active .line:nth-child(1) {
+  transform: rotate(45deg) translate(3px, 3px);
+}
+
+.burgerMenu.active .line:nth-child(2) {
+  opacity: 0;
+}
+
+.burgerMenu.active .line:nth-child(3) {
+  transform: rotate(-45deg) translate(3px, -3px);
+}
+
+.header_number{
+  font-size: 12px;
+}
+
+.header_link_block{
+  display: flex;
+  gap: 12px;
+}
+
+@media (max-width: 800px) {
+  .header_row{
+    align-items:  flex-start;
+  }
+  .header_menu_text{
+    display: none;
+  }
+  .header_number{
+    display: none;
+  }
+  .header_link_block{
+    display: none;
+  }
+  .header_text_block{
+    gap: 0;
+    flex-direction: column;
+    align-items: start;
+  }
+  .header_subtitle{
+    font-size: 8px;
+  }
+  .header_menu{
+    background-color: var(--secondary-color);
+    width: 40px;
+    height: 40px;
+  }
+  .header_title_logo {
+    width: 96px;
+    height: 23px;
+  }
+
+  .page {
+    padding: 16px 20px;
+    padding-bottom: 29px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+}

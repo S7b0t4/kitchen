@@ -30,6 +30,6 @@
 }
 
 .button:hover {
-  border-bottom: none;
-  color: var(--text-color)
+  border-bottom-color: transparent;
+  color: var(--text-color);
 }
